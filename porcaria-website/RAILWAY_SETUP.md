@@ -11,7 +11,7 @@ git init
 git add .
 git commit -m "Initial commit - Porca-Ria website"
 git branch -M main
-git remote add origin <your-github-repo-url>
+git remote add origin https://github.com/madpin/porcaria.git
 git push -u origin main
 ```
 
@@ -22,7 +22,7 @@ git push -u origin main
 2. **Click "New Project"**
 
 3. **Select "Deploy from GitHub repo"**
-   - Choose your `porcaria-website` repository
+   - Choose your `porcaria` repository (https://github.com/madpin/porcaria)
    - Railway will automatically detect it's a Next.js project
 
 4. **Configure Environment Variables**
@@ -31,7 +31,7 @@ git push -u origin main
 
    ```
    NODE_ENV=production
-   NEXT_PUBLIC_SITE_URL=https://porca-ria.up.railway.app
+   NEXT_PUBLIC_SITE_URL=https://porcaria.madpin.dev
    ```
 
    Optional (for email):
@@ -43,15 +43,21 @@ git push -u origin main
 5. **Deploy!**
    - Railway will automatically build and deploy
    - Wait ~2-3 minutes for the first deployment
-   - Your site will be live at: `https://porca-ria.up.railway.app`
+   - Your site will be live at: `https://porcaria.madpin.dev`
 
-### 3️⃣ Custom Domain (Optional)
+### 3️⃣ Custom Domain Setup
 
 1. In Railway dashboard → Settings → Domains
 2. Click "Custom Domain"
-3. Enter: `porca-ria.com.br`
-4. Update your domain DNS with the CNAME provided by Railway
-5. Wait for DNS propagation (up to 48 hours)
+3. Enter: `porcaria.madpin.dev`
+4. Update your DNS with the CNAME record provided by Railway:
+   ```
+   Type: CNAME
+   Name: porcaria
+   Value: [provided by Railway]
+   TTL: 3600
+   ```
+5. Wait for DNS propagation (usually 5-10 minutes for subdomain)
 
 ## ✅ Your Site is Live!
 

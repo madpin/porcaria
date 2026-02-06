@@ -2,6 +2,9 @@
 
 Website institucional para a Porca-Ria - Carnes & Bacon Artesanal, localizada no Cambuci, São Paulo, Brasil.
 
+🌐 **Live Site**: https://porcaria.madpin.dev
+📦 **Repository**: https://github.com/madpin/porcaria
+
 ## Sobre o Projeto
 
 Este é um website moderno e responsivo desenvolvido em Next.js 16, apresentando produtos artesanais de carnes e bacon com tradição italiana. O site inclui:

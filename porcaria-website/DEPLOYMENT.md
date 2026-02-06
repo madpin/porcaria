@@ -31,7 +31,7 @@ Railway is a modern platform for deploying full-stack applications with minimal 
    ```
    # Required
    NODE_ENV=production
-   NEXT_PUBLIC_SITE_URL=https://your-app.up.railway.app
+   NEXT_PUBLIC_SITE_URL=https://porcaria.madpin.dev
 
    # Optional - For email functionality
    RESEND_API_KEY=re_xxxxx
@@ -40,12 +40,12 @@ Railway is a modern platform for deploying full-stack applications with minimal 
 
 4. **Deploy**
    - Railway will automatically build and deploy
-   - Your app will be available at: `https://your-app.up.railway.app`
+   - Your app will be available at: `https://porcaria.madpin.dev`
 
-5. **Add Custom Domain (Optional)**
+5. **Configure Custom Domain**
    - Go to Settings → Domains
-   - Add your custom domain: `porca-ria.com.br`
-   - Update DNS records as instructed
+   - Add your custom domain: `porcaria.madpin.dev`
+   - Update DNS records as instructed by Railway
 
 #### Option 2: Deploy via Railway CLI
 
@@ -62,7 +62,7 @@ Railway is a modern platform for deploying full-stack applications with minimal 
 3. **Add Environment Variables**
    ```bash
    railway variables set NODE_ENV=production
-   railway variables set NEXT_PUBLIC_SITE_URL=https://your-app.up.railway.app
+   railway variables set NEXT_PUBLIC_SITE_URL=https://porcaria.madpin.dev
    ```
 
 4. **Deploy**
@@ -89,7 +89,7 @@ The following files are configured for Railway deployment:
 | Variable | Description | Required | Example |
 |----------|-------------|----------|---------|
 | `NODE_ENV` | Environment mode | Yes | `production` |
-| `NEXT_PUBLIC_SITE_URL` | Your website URL | Yes | `https://porca-ria.com.br` |
+| `NEXT_PUBLIC_SITE_URL` | Your website URL | Yes | `https://porcaria.madpin.dev` |
 | `RESEND_API_KEY` | Resend API key for emails | No | `re_xxxxx` |
 | `CONTACT_EMAIL` | Email to receive contact forms | No | `contato@porca-ria.com.br` |
 
@@ -115,17 +115,18 @@ The following files are configured for Railway deployment:
 1. **In Railway Dashboard**:
    - Go to Settings → Domains
    - Click "Custom Domain"
-   - Add `porca-ria.com.br`
+   - Add `porcaria.madpin.dev`
 
 2. **Update DNS Records**:
-   Add the following records to your domain registrar:
+   Add the following records to your domain registrar (madpin.dev):
    ```
    Type: CNAME
-   Name: @
+   Name: porcaria
    Value: [provided by Railway]
+   TTL: 3600
    ```
 
-3. **Wait for DNS Propagation** (can take up to 48 hours)
+3. **Wait for DNS Propagation** (usually 5-10 minutes for subdomains)
 
 ### Troubleshooting
 
