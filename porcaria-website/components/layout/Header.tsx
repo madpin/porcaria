@@ -12,7 +12,7 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-3 group">
             <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-primary-200 group-hover:border-primary-400 transition-colors">
               <Image
-                src="/images/logo.jpeg"
+                src="/images/porca_ria_brand_logo.jpeg"
                 alt={siteContent.siteName}
                 fill
                 className="object-cover"

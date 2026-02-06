@@ -8,8 +8,8 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/hero-1.png"
-          alt="Bacon artesanal"
+          src="/images/rustic_still_life_pig_bread_bacon.png"
+          alt="Porca-Ria: mesa rústica com bacon, pão e mostarda"
           fill
           className="object-cover"
           priority
@@ -25,7 +25,7 @@ export default function Hero() {
           <div className="mb-8 flex justify-center">
             <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-white shadow-2xl">
               <Image
-                src="/images/logo.jpeg"
+                src="/images/porca_ria_brand_logo.jpeg"
                 alt={siteContent.siteName}
                 fill
                 className="object-cover"

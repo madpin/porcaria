@@ -1,86 +1,27 @@
 import { Product } from '@/lib/types';
 
 export const products: Product[] = [
-  // Bacon Artesanal
   {
-    id: 'bacon-tradicional',
-    name: 'Bacon Tradicional',
+    id: 'bacon-artesanal',
+    name: 'Bacon Artesanal',
     category: 'bacon',
-    description: 'Bacon curado de forma artesanal, com tempero tradicional italiano da família de José. Ideal para café da manhã ou para dar sabor aos seus pratos favoritos.',
+    description: 'O verdadeiro sabor da fazenda na sua mesa. Nosso bacon é feito com muito amor e um diferencial importante: zero conservantes. É um produto natural, pensado para levar o cuidado da nossa família diretamente para a sua. Já disponível para pronta entrega!',
     weight: '300g',
-    badges: ['Artesanal', 'Sem Conservantes'],
-    image: '/images/products.png',
+    badges: ['Artesanal', 'Sem Conservantes', 'Pronta Entrega'],
+    image: '/images/cured_pork_product_showcase.png',
   },
   {
-    id: 'bacon-defumado',
-    name: 'Bacon Defumado',
-    category: 'bacon',
-    description: 'Bacon curado e levemente defumado, com aroma irresistível e sabor intenso. Perfeito para adicionar profundidade aos seus pratos.',
-    weight: '300g',
-    badges: ['Artesanal', 'Defumado'],
-    image: '/images/hero-2.png',
-  },
-  {
-    id: 'bacon-ervas',
-    name: 'Bacon com Ervas',
-    category: 'bacon',
-    description: 'Bacon temperado com alecrim, tomilho e alho. Perfeito para os amantes de sabores marcantes e aromáticos.',
-    weight: '300g',
-    badges: ['Artesanal', 'Produção Local'],
-    image: '/images/hero-1.png',
-  },
-
-  // Carnes Curadas
-  {
-    id: 'pancetta',
-    name: 'Pancetta Artesanal',
-    category: 'carnes',
-    description: 'Barriga de porco curada com sal marinho e especiarias tradicionais italianas. Versátil e saborosa, perfeita para massas e risotos italianos.',
-    weight: '400g',
-    badges: ['Artesanal', 'Sem Conservantes'],
-    image: '/images/products.png',
-  },
-  {
-    id: 'lombo-curado',
-    name: 'Lombo Curado',
-    category: 'carnes',
-    description: 'Lombo de porco curado lentamente, macio e suculento. Um clássico da charcutaria italiana trazido por José.',
-    weight: '350g',
-    badges: ['Artesanal', 'Produção Local'],
-    image: '/images/hero-1.png',
-  },
-  {
-    id: 'paio',
-    name: 'Paio Tradicional',
-    category: 'carnes',
-    description: 'Enchido tradicional italiano, feito com carne de porco temperada e fumada seguindo receitas ancestrais. Sabor autêntico e inconfundível.',
-    weight: '250g',
-    badges: ['Tradicional', 'Defumado'],
-    image: '/images/hero-2.png',
-  },
-
-  // Especialidades
-  {
-    id: 'toucinho',
-    name: 'Toucinho Fumado',
+    id: 'leitao-do-ze',
+    name: 'O Famoso Leitão do Zé',
     category: 'especialidades',
-    description: 'Toucinho curado e fumado de forma tradicional italiana, ideal para sopas, feijões e receitas tradicionais.',
-    weight: '500g',
-    badges: ['Artesanal', 'Defumado'],
-    image: '/images/products.png',
-  },
-  {
-    id: 'presunto',
-    name: 'Presunto Artesanal',
-    category: 'especialidades',
-    description: 'Presunto curado de forma tradicional italiana, com sabor único e textura delicada. Uma iguaria inspirada nas receitas da família de José.',
-    weight: '200g',
-    badges: ['Artesanal', 'Premium'],
-    image: '/images/hero-1.png',
+    description: 'Quer surpreender em um evento ou jantar especial? A técnica exclusiva de assar o leitão inteiro e de pé está disponível sob encomenda. Consulte nossos prazos e garanta essa experiência única.',
+    weight: 'Sob encomenda',
+    badges: ['Exclusivo', 'Sob Encomenda'],
+    image: '/images/leitao_roasted_centerpiece.png',
   },
 ];
 
-export const featuredProducts = products.slice(0, 3);
+export const featuredProducts = products;
 
 export const productsByCategory = {
   bacon: products.filter(p => p.category === 'bacon'),

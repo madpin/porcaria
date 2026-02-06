@@ -19,7 +19,7 @@ export default function FeaturedProducts() {
         </div>
 
         {/* Products Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {featuredProducts.map((product) => (
             <Card key={product.id}>
               <div className="relative h-64 overflow-hidden">

@@ -4,7 +4,7 @@ import { siteContent } from '@/data/content';
 
 export const metadata: Metadata = {
   title: 'Sobre Nós',
-  description: 'Conheça a história de José e da Porca-Ria no Cambuci, São Paulo. As raízes italianas, nosso processo artesanal e nosso compromisso com a qualidade.',
+  description: 'Conheça a história de José Américo e da Porca-Ria. Uma herança de família, do leitão da avó ao famoso leitão do Zé e ao bacon artesanal sem conservantes.',
 };
 
 export default function AboutPage() {
@@ -14,7 +14,7 @@ export default function AboutPage() {
       <section className="relative h-96 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero-2.png"
+            src="/images/rustic_pig_bacon_herbs.png"
             alt="Sobre a Porca-Ria"
             fill
             className="object-cover"
@@ -28,7 +28,31 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Story Section */}
+      {/* José Américo + Portrait */}
+      <section className="section-padding bg-primary-50">
+        <div className="section-container max-w-4xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="relative aspect-[3/4] max-h-[480px] rounded-lg overflow-hidden shadow-lg">
+              <Image
+                src="/images/portrait_man_white_beard_glasses.png"
+                alt="José Américo"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <h2 className="text-4xl font-serif font-bold text-primary-800 mb-6">
+                {siteContent.about.joseAmerico.title}
+              </h2>
+              <p className="text-xl text-primary-700 leading-relaxed">
+                {siteContent.about.joseAmerico.bio}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Story Section - Herança de Família */}
       <section className="section-padding">
         <div className="section-container max-w-4xl">
           <div className="mb-12">
@@ -44,11 +68,16 @@ export default function AboutPage() {
             <h3 className="text-3xl font-serif font-bold text-primary-800 mb-4">
               {siteContent.about.story.title}
             </h3>
-            {siteContent.about.story.paragraphs.map((paragraph, index) => (
-              <p key={index} className="text-lg text-primary-700 leading-relaxed">
-                {paragraph}
-              </p>
-            ))}
+            <p className="text-lg text-primary-700 leading-relaxed mb-6">
+              {siteContent.about.story.intro}
+            </p>
+            <ul className="space-y-4">
+              {siteContent.about.story.steps.map((step, index) => (
+                <li key={index} className="text-lg text-primary-700 leading-relaxed">
+                  <strong className="text-primary-800">{step.who}:</strong> {step.text}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>
@@ -56,8 +85,8 @@ export default function AboutPage() {
       {/* Image Divider */}
       <section className="relative h-80 overflow-hidden">
         <Image
-          src="/images/hero-1.png"
-          alt="Processo artesanal"
+          src="/images/raw_pork_cuts_herbs_spices.png"
+          alt="Cortes de carne e temperos artesanais"
           fill
           className="object-cover"
         />

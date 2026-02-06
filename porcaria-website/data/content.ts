@@ -8,30 +8,30 @@ export const siteContent = {
   // Homepage
   home: {
     hero: {
-      title: 'Sabores Autênticos da Tradição Italiana',
-      subtitle: 'Carnes e bacon artesanais, produzidos com paixão italiana e dedicação desde 2026',
+      title: 'Tradição e Sabor Artesanal',
+      subtitle: 'Conheça a história de José Américo. Uma paixão de berço transformada em carnes e bacon artesanais.',
       cta: 'Descubra os Nossos Produtos',
     },
     features: [
       {
         icon: 'Award',
-        title: '100% Artesanal',
-        description: 'Cada produto é elaborado manualmente, seguindo técnicas ancestrais de cura e tempero.',
+        title: 'Tradição Real',
+        description: 'Receitas que atravessaram gerações, da avó à mãe e ao José Américo.',
       },
       {
         icon: 'Leaf',
-        title: 'Ingredientes Naturais',
-        description: 'Apenas ingredientes naturais, sem conservantes artificiais ou aditivos químicos.',
+        title: 'Saúde e Qualidade',
+        description: 'Bacon artesanal livre de químicos. Zero conservantes, apenas o cuidado da nossa família.',
       },
       {
         icon: 'Heart',
-        title: 'Tradição Italiana',
-        description: 'Sabores autênticos que preservam e celebram a rica tradição culinária italiana trazida por José.',
+        title: 'Feito à Mão',
+        description: 'Cada peça é produzida com o carinho de quem ama o que faz.',
       },
     ] as Feature[],
     productsSection: {
-      title: 'Produtos em Destaque',
-      subtitle: 'Conheça alguns de nossos produtos artesanais',
+      title: 'Nossos Produtos',
+      subtitle: 'Bacon artesanal e o famoso leitão do Zé — tradição e sabor para sua mesa.',
       cta: 'Ver Todos os Produtos',
     },
   },
@@ -41,14 +41,19 @@ export const siteContent = {
     title: 'Sobre a Porca-Ria',
     hero: {
       title: 'A Nossa História',
-      text: 'A Porca-Ria nasceu da paixão de José pela cura artesanal de carnes e pela preservação das tradições culinárias de suas raízes italianas. Localizada no tradicional bairro do Cambuci, em São Paulo, cada produto é elaborado com técnicas ancestrais italianas, combinando o melhor da tradição com padrões modernos de qualidade e higiene.',
+      text: 'Conheça a história de José Américo. Após 40 anos como administrador, ele decidiu transformar em negócio uma paixão que vem de berço: a charcutaria artesanal.',
+    },
+    joseAmerico: {
+      title: 'José Américo',
+      bio: 'Após 40 anos como administrador, decidiu transformar em negócio uma paixão que vem de berço: a charcutaria artesanal. O amor pela cozinha começou na infância, observando uma receita que atravessou gerações.',
     },
     story: {
-      title: 'Tradição e Qualidade',
-      paragraphs: [
-        'Fundada em 2026 por José no bairro do Cambuci, em São Paulo, a Porca-Ria é mais do que um negócio – é uma celebração da arte milenar da charcutaria italiana. Com orgulho em suas raízes italianas, José trouxe para o Brasil as receitas e técnicas transmitidas de geração em geração em sua família. Dedicamo-nos a criar produtos que honram essas receitas tradicionais italianas enquanto satisfazem os paladares brasileiros contemporâneos.',
-        'Trabalhamos exclusivamente com carnes selecionadas de produtores brasileiros, garantindo não só a qualidade superior, mas também o apoio à economia local de São Paulo. Cada peça é temperada com especiarias naturais seguindo métodos italianos autênticos e curada lentamente, permitindo que os sabores se desenvolvam de forma natural e harmoniosa.',
-        'Nosso compromisso é simples: criar produtos autênticos, saborosos e saudáveis, sem atalhos ou compromissos. É este respeito pela tradição italiana e pela qualidade que define cada produto Porca-Ria, unindo o melhor da Itália com o coração de São Paulo.',
+      title: 'Uma Herança de Família',
+      intro: 'O amor pela cozinha começou na infância, observando a evolução de uma receita que atravessou gerações:',
+      steps: [
+        { who: 'A Avó', text: 'Fazia o tradicional leitão assado, dividido ao meio.' },
+        { who: 'A Mãe', text: 'Aperfeiçoou a técnica, assando o leitão inteiro.' },
+        { who: 'José Américo', text: 'Inovou ao criar um método para assar o leitão inteiro e de pé, adaptado inclusive para fornos residenciais.' },
       ],
     },
     process: {
@@ -58,12 +63,12 @@ export const siteContent = {
         {
           number: 1,
           title: 'Seleção das Carnes',
-          description: 'Escolhemos apenas carnes de qualidade superior de produtores brasileiros de confiança.',
+          description: 'Escolhemos apenas carnes de qualidade superior de produtores de confiança.',
         },
         {
           number: 2,
           title: 'Tempero Tradicional',
-          description: 'Aplicamos misturas de especiarias naturais seguindo receitas tradicionais italianas da família de José.',
+          description: 'Aplicamos misturas de especiarias naturais seguindo receitas que atravessaram gerações.',
         },
         {
           number: 3,
@@ -79,26 +84,22 @@ export const siteContent = {
     },
     commitment: {
       title: 'Nosso Compromisso',
-      text: 'Sem conservantes artificiais. Sem corantes. Sem atalhos. Apenas ingredientes naturais, técnicas tradicionais italianas e muito amor pelo que fazemos. Este é o compromisso da Porca-Ria e das raízes italianas de José com você, direto do Cambuci para sua mesa.',
+      text: 'Sem conservantes artificiais. Sem corantes. Sem atalhos. Apenas ingredientes naturais, técnicas tradicionais e muito amor pelo que fazemos. Este é o compromisso da Porca-Ria com você — o cuidado da nossa família direto para a sua mesa.',
     },
   },
 
   // Products Page
   products: {
     title: 'Nossos Produtos',
-    subtitle: 'Explore nossa seleção de carnes e bacon artesanais',
+    subtitle: 'Bacon artesanal e o famoso leitão do Zé. Tradição e sabor para sua mesa.',
     categories: {
       bacon: {
         title: 'Bacon Artesanal',
-        description: 'Nosso bacon é curado lentamente com sal marinho e especiarias naturais, resultando em sabor intenso e textura perfeita.',
-      },
-      carnes: {
-        title: 'Carnes Curadas',
-        description: 'Carnes selecionadas, temperadas e curadas seguindo métodos tradicionais italianos.',
+        description: 'O verdadeiro sabor da fazenda na sua mesa. Nosso bacon é feito com muito amor e um diferencial importante: zero conservantes. É um produto natural, pensado para levar o cuidado da nossa família diretamente para a sua. Já disponível para pronta entrega!',
       },
       especialidades: {
-        title: 'Especialidades',
-        description: 'Produtos únicos que representam o melhor de nossa tradição e criatividade.',
+        title: 'O Famoso Leitão do Zé',
+        description: 'Quer surpreender em um evento ou jantar especial? A técnica exclusiva de assar o leitão inteiro e de pé está disponível sob encomenda. Consulte nossos prazos e garanta essa experiência única.',
       },
     },
   },
@@ -118,6 +119,7 @@ export const siteContent = {
       subjectOptions: [
         { value: 'informacao', label: 'Informação Geral' },
         { value: 'encomenda', label: 'Encomenda' },
+        { value: 'leitao', label: 'Encomenda do Leitão do Zé' },
         { value: 'parceria', label: 'Parceria' },
         { value: 'outro', label: 'Outro' },
       ],
@@ -132,7 +134,7 @@ export const siteContent = {
       title: 'Informações de Contato',
       address: {
         label: 'Endereço',
-        value: 'Porca-Ria - Carnes & Bacon Artesanal\nCambuci\nSão Paulo - SP\nBrasil',
+        value: 'Porca-Ria - Carnes & Bacon Artesanal\nSão Paulo - SP\nBrasil',
       },
       email: {
         label: 'E-mail',
@@ -149,10 +151,51 @@ export const siteContent = {
     },
   },
 
+  // History Page
+  history: {
+    title: 'A Nossa História',
+    subtitle: 'O leitão do Zé em imagens — tradição de família em cada mesa.',
+    hero: {
+      title: 'Uma tradição em fotos',
+      text: 'Do forno à mesa, o famoso leitão do Zé é uma herança que atravessa gerações. Estas imagens contam um pouco dessa história.',
+    },
+    timeline: [
+      {
+        year: '2017',
+        title: 'Na cozinha',
+        description: 'O leitão assado na cozinha de casa — a receita que veio da avó e ganhou o mundo.',
+        image: '/images/leitao_ze_kitchen_2017.jpg',
+        imageAlt: 'Leitão do Zé na cozinha',
+      },
+      {
+        year: 'Natal em família',
+        title: 'À mesa',
+        description: 'O leitão no centro da mesa em festas de família. Tradição que une gerações.',
+        image: '/images/leitao_christmas_family_table.jpg',
+        imageAlt: 'Mesa de Natal com leitão',
+      },
+      {
+        year: 'Tradição viva',
+        title: 'O preparo',
+        description: 'Cada detalhe conta: do tempero ao acabamento. O cuidado que faz a diferença.',
+        image: '/images/leitao_olives_kitchen.jpg',
+        imageAlt: 'Preparação do leitão',
+      },
+      {
+        year: '2025',
+        title: 'À sua mesa',
+        description: 'O mesmo sabor e carinho, agora para encomenda. O famoso leitão do Zé para a sua festa.',
+        image: '/images/leitao_ze_table_2025.jpg',
+        imageAlt: 'Leitão na mesa',
+      },
+    ],
+  },
+
   // Navigation
   nav: {
     home: 'Início',
     about: 'Sobre',
+    history: 'História',
     products: 'Produtos',
     contact: 'Contato',
   },
@@ -161,13 +204,14 @@ export const siteContent = {
   footer: {
     about: {
       title: 'Porca-Ria',
-      text: 'Carnes e bacon artesanais do Cambuci, São Paulo. Produzidos com paixão italiana e dedicação. Sabores autênticos da tradição italiana de José.',
+      text: 'Carnes e bacon artesanais de José Américo. Tradição de família, zero conservantes e o cuidado de quem ama o que faz — para sua mesa.',
     },
     links: {
       title: 'Links Úteis',
       items: [
         { label: 'Início', href: '/' },
         { label: 'Sobre Nós', href: '/sobre' },
+        { label: 'História', href: '/historia' },
         { label: 'Produtos', href: '/produtos' },
         { label: 'Contato', href: '/contato' },
       ],

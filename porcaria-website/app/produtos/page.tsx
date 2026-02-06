@@ -6,7 +6,7 @@ import ProductGrid from '@/components/products/ProductGrid';
 
 export const metadata: Metadata = {
   title: 'Produtos',
-  description: 'Explore nossa seleção de bacon e carnes artesanais no Cambuci, São Paulo. Produtos curados seguindo a tradição italiana de José, sem conservantes.',
+  description: 'Bacon artesanal e o famoso leitão do Zé. José Américo e a Porca-Ria — tradição de família, zero conservantes, pronta entrega e sob encomenda.',
 };
 
 export default function ProductsPage() {
@@ -16,7 +16,7 @@ export default function ProductsPage() {
       <section className="relative h-96 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/products.png"
+            src="/images/cured_pork_product_showcase.png"
             alt="Produtos Porca-Ria"
             fill
             className="object-cover"
@@ -51,26 +51,8 @@ export default function ProductsPage() {
       {/* Divider */}
       <div className="h-px bg-gradient-to-r from-transparent via-primary-300 to-transparent" />
 
-      {/* Carnes Curadas Section */}
+      {/* O Famoso Leitão do Zé Section */}
       <section className="section-padding bg-primary-50">
-        <div className="section-container">
-          <div className="mb-12">
-            <h2 className="text-4xl font-serif font-bold text-primary-800 mb-4">
-              {siteContent.products.categories.carnes.title}
-            </h2>
-            <p className="text-xl text-primary-600 max-w-3xl">
-              {siteContent.products.categories.carnes.description}
-            </p>
-          </div>
-          <ProductGrid products={productsByCategory.carnes} />
-        </div>
-      </section>
-
-      {/* Divider */}
-      <div className="h-px bg-gradient-to-r from-transparent via-primary-300 to-transparent" />
-
-      {/* Especialidades Section */}
-      <section className="section-padding">
         <div className="section-container">
           <div className="mb-12">
             <h2 className="text-4xl font-serif font-bold text-primary-800 mb-4">

@@ -10,6 +10,7 @@ import { cn } from '@/lib/utils';
 const navItems = [
   { label: siteContent.nav.home, href: '/' },
   { label: siteContent.nav.about, href: '/sobre' },
+  { label: siteContent.nav.history, href: '/historia' },
   { label: siteContent.nav.products, href: '/produtos' },
   { label: siteContent.nav.contact, href: '/contacto' },
 ];
