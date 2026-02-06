@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  /* Primary Colors (Browns) */
+  --color-primary-50: #fdf8f6;
+  --color-primary-100: #f2e8e5;
+  --color-primary-200: #eaddd7;
+  --color-primary-300: #e0cec7;
+  --color-primary-400: #d2bab0;
+  --color-primary-500: #b39489;
+  --color-primary-600: #9b7566;
+  --color-primary-700: #7c5e52;
+  --color-primary-800: #5d4741;
+  --color-primary-900: #3e2f2a;
+
+  /* Accent Colors (Bacon/Orange) */
+  --color-accent-50: #fff7ed;
+  --color-accent-100: #ffedd5;
+  --color-accent-500: #f97316;
+  --color-accent-600: #ea580c;
+
+  /* Neutral Wood Tones */
+  --color-neutral-wood: #8b6f47;
+  --color-neutral-dark-wood: #5c4a3a;
+
+  /* Font Families */
+  --font-family-serif: 'Playfair Display', serif;
+  --font-family-sans: 'Inter', sans-serif;
+  --font-family-display: 'Bebas Neue', cursive;
+}
+
+* {
+  @apply border-primary-200;
+}
+
+body {
+  @apply bg-white text-primary-900 antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-serif);
+}
+
+.section-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.section-padding {
+  @apply py-12 sm:py-16 lg:py-24;
+}
