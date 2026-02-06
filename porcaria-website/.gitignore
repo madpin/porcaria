@@ -26,6 +26,8 @@ yarn-error.log*
 .env*.local
 .env
 
+# NPM - Don't ignore .npmrc as it sets public registry
+
 # Vercel
 .vercel
 

@@ -26,6 +26,8 @@ git remote add origin https://github.com/madpin/porcaria.git
 git push -u origin main
 ```
 
+> **Note**: We've configured `.npmrc` to use the public npm registry and regenerated `package-lock.json`. This ensures Railway can install all dependencies without authentication issues. See `RAILWAY_FIX.md` for details.
+
 ### Step 2: Deploy on Railway
 
 1. **Open Railway**: https://railway.app

@@ -2,7 +2,7 @@
 nixPkgs = ['nodejs_20']
 
 [phases.install]
-cmds = ['npm install']
+cmds = ['npm config set registry https://registry.npmjs.org/', 'npm install']
 
 [phases.build]
 cmds = ['npm run build']
